@@ -1,0 +1,87 @@
+﻿# SVN / nested Git metadata
+.svn/
+**/.svn/
+.git/
+**/.git/
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+.cursor/
+.codex/
+.playwright-mcp/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs / temp
+log/
+logs/
+tmp/
+temp/
+output/
+*.log
+
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Bb]undles/
+[Ll]ogs/
+[Tt]mp/
+[Mm]emoryCaptures/
+[Uu]ser[Ss]ettings/
+[Cc][Dd][Nn]/
+
+# HybridCLR / generated local data
+/HybridCLRData/
+**/HybridCLRData/
+/Assets/HybridCLRGenerate/
+/Assets/HybridCLRGenerate.meta
+/Assets/StreamingAssets/yoo/
+/Assets/StreamingAssets/yoo.meta
+
+# Unity generated files
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+sysinfo.txt
+*.stackdump
+
+# Package/build caches
+node_modules/
+**/Packages/com.unity.burst@*/.Runtime/
+**/Downloads/
+**/client_prefab_tmp/
+**/raw-materials/
+**/ffmpeg-temp/
+**/ffmpeg-extract/
+**/tools/ffmpeg.zip
