@@ -85,3 +85,15 @@ node_modules/
 **/ffmpeg-temp/
 **/ffmpeg-extract/
 **/tools/ffmpeg.zip
+
+# --- SVN/Git bridge safety ---
+.svn/
+**/.svn/
+.git/
+**/.git/
+.env
+**/.env
+api_key.txt
+**/api_key.txt
+*.db-shm
+*.db-wal
