@@ -42,7 +42,7 @@
               <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               预计阅读 5 分钟
             </span>
-            <span class="text-gray-400">采集 73+ 源 · 原始 2277 篇 · 精选 128 篇</span>
+            <span class="text-gray-400">采集 73+ 源 · 原始 2289 篇 · 精选 132 篇</span>
           </div>
         </div>
         <span class="text-sm text-gray-600">2026-06-23</span>
@@ -108,10 +108,10 @@
                   <h2 class="text-sm font-bold text-amber-900 uppercase tracking-wide">今日最重要</h2>
                   <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-medium">开发者视角</span>
                   
-                  <span class="text-xs bg-white/80 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-full font-medium">RAG</span>
+                  <span class="text-xs bg-white/80 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-full font-medium">Memory</span>
                   
                 </div>
-                <h3 class="text-xl font-bold text-gray-900">GLM-5.2兼容API实战</h3>
+                <h3 class="text-xl font-bold text-gray-900">Stateful LLM Agents记忆攻防评测</h3>
               </div>
             </div>
 
@@ -119,20 +119,20 @@
             <div class="bg-white/70 border border-amber-200 rounded-lg p-3 mb-4">
               <div class="text-xs font-semibold text-amber-900 mb-1">为什么和我们相关</div>
               
-              <p class="text-sm text-gray-700">它会影响我们是否把GLM-5.2纳入下一轮RAG与Agent工作流评测池，并复用现有OpenAI兼容链路快速验证。</p>
+              <p class="text-sm text-gray-700">它命中我们正在看的Memory与RAG方向，会直接影响是否推进持久记忆能力和相应防护设计。</p>
               
               
-              <p class="text-sm text-gray-600 mt-1">它直接命中当前在看的RAG、工作流与编排方向，核心判断点是是否值得接入现有工具调用和长上下文检索链路。</p>
+              <p class="text-sm text-gray-600 mt-1">它紧贴Memory与RAG接入评估，能帮助确定记忆写入、检索和会话隔离的工程防线。</p>
               
             </div>
             
 
             <div class="space-y-2 text-sm mb-4">
               
-              <p class="text-gray-700"><span class="font-semibold text-gray-900">发生了什么</span> — 实测GLM-5.2兼容OpenAI API、函数调用与长检索。</p>
+              <p class="text-gray-700"><span class="font-semibold text-gray-900">发生了什么</span> — 论文系统评测Stateful LLM Agents持久记忆攻击防御。</p>
               
               
-              <p class="text-gray-700"><span class="font-semibold text-gray-900">为什么重要</span> — 开发者可低成本接入GLM-5.2替代现有接口。</p>
+              <p class="text-gray-700"><span class="font-semibold text-gray-900">为什么重要</span> — 开发者可据此设计更安全的长记忆Agent架构。</p>
               
             </div>
 
@@ -141,7 +141,7 @@
               
               <div class="bg-white/70 border border-slate-200 rounded-lg p-3">
                 <div class="text-xs font-semibold text-slate-900 mb-1">来源补充</div>
-                <p class="text-sm text-gray-700">内容基于托管API而非本地部署，覆盖多提供商接入、流式推理输出与可复用聊天封装。</p>
+                <p class="text-sm text-gray-700">该研究为arXiv预印本，版本号为2605.08442v2，攻击路径强调由RAG文档注入再写入持久记忆。</p>
               </div>
               
               
@@ -153,32 +153,32 @@
               <div class="flex items-center gap-2 mb-1.5">
                 <span class="text-xs font-semibold text-blue-900">对开发者的影响</span>
               </div>
-              <p class="text-sm text-gray-700">这意味着已有基于OpenAI API的应用可更快迁移或增配GLM-5.2。也为函数调用和长上下文场景提供了直接参考。</p>
+              <p class="text-sm text-gray-700">长时记忆正成为Agent产品核心能力，但也扩大了提示注入与污染风险。该评测为防御选型、测试覆盖和上线前审计提供了参考。</p>
             </div>
             
 
             <div class="grid md:grid-cols-2 gap-3 mb-4">
               <div class="bg-white/70 border border-amber-200 rounded-lg p-3">
                 <div class="text-xs font-semibold text-amber-900 mb-1">建议怎么验证</div>
-                <p class="text-sm text-gray-700">评估接入GLM-5.2</p>
+                <p class="text-sm text-gray-700">补做记忆安全测试</p>
               </div>
               <div class="bg-white/70 border border-amber-200 rounded-lg p-3">
                 <div class="text-xs font-semibold text-amber-900 mb-1">建议关注点</div>
-                <p class="text-sm text-gray-700">真正接入时要重点盯长上下文检索命中率、reasoning effort调节后的延迟波动，以及函数调用格式稳定性。</p>
+                <p class="text-sm text-gray-700">重点盯记忆写入策略、跨会话隔离和RAG来源可信度，否则攻击会在后续会话持续生效。</p>
               </div>
             </div>
 
             
             <div class="flex items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2.5">
               <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              <span class="text-sm font-medium">建议动作：评估接入GLM-5.2</span>
+              <span class="text-sm font-medium">建议动作：补做记忆安全测试</span>
             </div>
             
 
             
             <div class="flex flex-wrap items-center gap-4 mt-3">
               
-              <a href="https://www.marktechpost.com/2026/06/22/glm-5-2-openai-compatible-api-a-hands-on-guide-to-reasoning-effort-function-calling-and-long-context-retrieval/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700 hover:text-amber-900">
+              <a href="https://arxiv.org/abs/2605.08442" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700 hover:text-amber-900">
                 查看原文 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               </a>
               
@@ -201,6 +201,67 @@
             <div class="p-5">
                 <div class="flex items-center gap-2 mb-2">
                   <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">开发工具</span>
+                  <span class="text-xs text-gray-400">MarkTechPost</span>
+                  
+                  <span class="text-xs text-blue-700 bg-white border border-blue-200 px-2 py-0.5 rounded-full">RAG</span>
+                  
+                  
+                </div>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">GLM-5.2 API实战解析长上下文检索与函数调用</h3>
+                
+                <div class="bg-amber-50 border border-amber-100 rounded-lg p-2.5 mb-3">
+                  <span class="text-xs font-semibold text-amber-900">为什么和我们相关</span>
+                  
+                  <p class="text-xs text-gray-700 mt-0.5">它直接对应我们在看的RAG、工作流与Agent评测，会影响GLM-5.2是否进入接入链路和评测池。</p>
+                  
+                  
+                  <p class="text-xs text-gray-600 mt-0.5">它命中当前开发重点里的RAG、工作流和Agent评测，能直接帮助判断GLM-5.2的编排方式与接入成本。</p>
+                  
+                </div>
+                
+                <p class="text-xs text-gray-600 mb-2">文章用托管API实测GLM-5.2的推理控制与RAG。</p>
+                
+                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>可直接判断GLM-5.2接入Agent链路的工程价值。</p>
+                
+                
+                <div class="grid md:grid-cols-2 gap-3 mb-3">
+                  
+                  <div class="bg-slate-50 rounded-lg p-2.5">
+                    <span class="text-xs font-semibold text-slate-900">来源补充</span>
+                    <p class="text-xs text-gray-700 mt-0.5">内容基于托管的 OpenAI-Compatible API，而非本地部署，并覆盖多供应商接入与流式推理。</p>
+                  </div>
+                  
+                  
+                </div>
+                
+                
+                <div class="bg-blue-50 rounded-lg p-2.5 mb-3">
+                  <span class="text-xs font-semibold text-blue-900">对开发者的影响</span>
+                  <p class="text-xs text-gray-700 mt-0.5">它同时覆盖函数调用、长上下文检索和推理力度控制，适合进入RAG与Agent评测池。对接入GLM-5.2的工程判断有直接参考。</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-3 mb-3">
+                  <div class="bg-gray-50 rounded-lg p-2.5">
+                    <span class="text-xs font-semibold text-gray-900">建议怎么验证</span>
+                    <p class="text-xs text-gray-700 mt-0.5">纳入评测池</p>
+                  </div>
+                  <div class="bg-gray-50 rounded-lg p-2.5">
+                    <span class="text-xs font-semibold text-gray-900">建议关注点</span>
+                    <p class="text-xs text-gray-700 mt-0.5">真正接入时要重点盯GLM-5.2在长上下文检索下的工具调用稳定性，以及推理力度上调后的延迟波动。</p>
+                  </div>
+                </div>
+                
+                <a href="https://www.marktechpost.com/2026/06/22/glm-5-2-openai-compatible-api-a-hands-on-guide-to-reasoning-effort-function-calling-and-long-context-retrieval/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-800">
+                  查看原文 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                
+            </div>
+          </div>
+          
+          <div class="bg-white border border-gray-200 rounded-xl hover:shadow-md transition-shadow">
+            <div class="p-5">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">开发工具</span>
                   <span class="text-xs text-gray-400">arXiv cs.AI</span>
                   
                   <span class="text-xs text-blue-700 bg-white border border-blue-200 px-2 py-0.5 rounded-full">Memory</span>
@@ -212,21 +273,23 @@
                 <div class="bg-amber-50 border border-amber-100 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-amber-900">为什么和我们相关</span>
                   
-                  <p class="text-xs text-gray-700 mt-0.5">它会影响我们是否把结构化代码索引纳入下一轮 Coding Agent 的 Memory 与 RAG 接入评估。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">它直接对应我们当前看的 Memory、RAG 与 Coding Agent 方向，会影响代码库检索链路是否值得接入。</p>
                   
+                  
+                  <p class="text-xs text-gray-600 mt-0.5">它命中 Memory 与 Coding Agent 关注域，关键判断点是结构化索引要不要纳入接入方案和评测池基线。</p>
                   
                 </div>
                 
-                <p class="text-xs text-gray-600 mb-2">arXiv:2606.22417v1评估Coding Agent中的结构化代码索引。</p>
+                <p class="text-xs text-gray-600 mb-2">arXiv研究结构化代码索引对Coding Agent的作用。</p>
                 
-                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>直接检验代码索引对Agent记忆与检索的真实增益。</p>
+                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>直接影响代码记忆与检索链路设计。</p>
                 
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   
                   <div class="bg-slate-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-slate-900">来源补充</span>
-                    <p class="text-xs text-gray-700 mt-0.5">论文在固定 coding-agent harness 和固定模型条件下做对比，更适合观察索引机制本身的独立贡献。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">论文在固定 Coding Agent harness 与固定模型下比较索引效果，强调变量控制而非单纯换模型提分。</p>
                   </div>
                   
                   
@@ -235,17 +298,17 @@
                 
                 <div class="bg-blue-50 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-blue-900">对开发者的影响</span>
-                  <p class="text-xs text-gray-700 mt-0.5">这和当前关注的 Memory、RAG、Coding Agent 高度贴近，能影响代码库接入和索引方案选型。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">这正中 Coding Agent 的 Memory/RAG 设计问题。能帮助判断代码索引是否值得进入默认链路。</p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议怎么验证</span>
-                    <p class="text-xs text-gray-700 mt-0.5">对照现方案</p>
+                    <p class="text-xs text-gray-700 mt-0.5">复现结论</p>
                   </div>
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议关注点</span>
-                    <p class="text-xs text-gray-700 mt-0.5">重点盯结构化索引在大仓库下的召回精度、延迟和维护成本，避免记忆增强反而拉低吞吐。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">重点盯结构化索引带来的检索召回提升，是否足以覆盖索引构建成本、上下文膨胀和仓库增量更新复杂度。</p>
                   </div>
                 </div>
                 
@@ -271,23 +334,23 @@
                 <div class="bg-amber-50 border border-amber-100 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-amber-900">为什么和我们相关</span>
                   
-                  <p class="text-xs text-gray-700 mt-0.5">它直接命中我们当前在看的 RAG 与编排方向，可用于决定哪些 Agentic RAG 组件值得进入标准链路。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">它命中我们当前重点看的 RAG 与 编排 方向，可帮助判断哪些 Agentic RAG 组件值得保留进工程链路。</p>
                   
                   
-                  <p class="text-xs text-gray-600 mt-0.5">它贴近当前 RAG、工作流、编排关注域，会影响我们对多跳检索组件取舍、评测池和本地部署门槛的判断。</p>
+                  <p class="text-xs text-gray-600 mt-0.5">它贴近 RAG 与 工作流编排关注域，核心是用消融结果指导接入评估、评测池设计和本地部署取舍。</p>
                   
                 </div>
                 
-                <p class="text-xs text-gray-600 mb-2">arXiv:2606.21553v1拆解本地7B模型Agentic RAG组件贡献。</p>
+                <p class="text-xs text-gray-600 mb-2">arXiv拆解本地7B模型Agentic RAG各组件贡献。</p>
                 
-                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>有助于判断多跳RAG编排中哪些环节真正有效。</p>
+                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>有助判断多跳RAG编排的必要组件。</p>
                 
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   
                   <div class="bg-slate-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-slate-900">来源补充</span>
-                    <p class="text-xs text-gray-700 mt-0.5">研究聚焦本地 7B 模型与多跳问答场景，结论更适合用来评估轻量部署下的 RAG 编排取舍。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">论文聚焦多跳问答，并在本地 7B 模型条件下做组件消融，更适合评估轻量部署下的编排收益边界。</p>
                   </div>
                   
                   
@@ -296,82 +359,21 @@
                 
                 <div class="bg-blue-50 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-blue-900">对开发者的影响</span>
-                  <p class="text-xs text-gray-700 mt-0.5">对RAG、工作流、编排评估很有价值，尤其适合校准多跳检索链路的复杂度收益比。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">对 RAG 编排和本地小模型路线都很有参考价值。可用于精简查询分解、循环检索等模块。</p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议怎么验证</span>
-                    <p class="text-xs text-gray-700 mt-0.5">复核编排方案</p>
+                    <p class="text-xs text-gray-700 mt-0.5">对照消融</p>
                   </div>
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议关注点</span>
-                    <p class="text-xs text-gray-700 mt-0.5">重点盯查询分解、迭代检索和推理循环各自带来的增益，避免本地7B模型下复杂编排收益不及成本。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">重点盯 query decomposition、迭代循环与自适应检索各自的真实增益，避免在本地 7B 部署里引入高延迟低回报链路。</p>
                   </div>
                 </div>
                 
                 <a href="https://arxiv.org/abs/2606.21553" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-800">
-                  查看原文 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
-                
-            </div>
-          </div>
-          
-          <div class="bg-white border border-gray-200 rounded-xl hover:shadow-md transition-shadow">
-            <div class="p-5">
-                <div class="flex items-center gap-2 mb-2">
-                  <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">开发工具</span>
-                  <span class="text-xs text-gray-400">B站·陈虾仁AI策划</span>
-                  
-                  <span class="text-xs text-blue-700 bg-white border border-blue-200 px-2 py-0.5 rounded-full">Coding Agent</span>
-                  
-                  
-                </div>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">智谱ZCode 3.0与GLM 5.2实操问题评测</h3>
-                
-                <div class="bg-amber-50 border border-amber-100 rounded-lg p-2.5 mb-3">
-                  <span class="text-xs font-semibold text-amber-900">为什么和我们相关</span>
-                  
-                  <p class="text-xs text-gray-700 mt-0.5">它与我们当前关注的Agent评测、工作流和Coding Agent高度贴近，可直接作为稳定性与可用性测试样本。</p>
-                  
-                  
-                  <p class="text-xs text-gray-600 mt-0.5">它命中Agent评测和工作流方向，能帮助判断ZCode 3.0是否值得进入Coding Agent评测池与接入链路验证。</p>
-                  
-                </div>
-                
-                <p class="text-xs text-gray-600 mb-2">评测称ZCode 3.0能生成全套代码但频繁断连。</p>
-                
-                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>直接暴露Coding Agent可用性与稳定性短板。</p>
-                
-                
-                <div class="grid md:grid-cols-2 gap-3 mb-3">
-                  
-                  <div class="bg-slate-50 rounded-lg p-2.5">
-                    <span class="text-xs font-semibold text-slate-900">来源补充</span>
-                    <p class="text-xs text-gray-700 mt-0.5">视频时长13分53秒，目前播放13、收藏0，反馈样本很少但已指出断连和验证弹窗问题。</p>
-                  </div>
-                  
-                  
-                </div>
-                
-                
-                <div class="bg-blue-50 rounded-lg p-2.5 mb-3">
-                  <span class="text-xs font-semibold text-blue-900">对开发者的影响</span>
-                  <p class="text-xs text-gray-700 mt-0.5">ZCode 3.0结合GLM 5.2展示了端到端写代码能力，但稳定性问题会直接影响真实接入价值。</p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 gap-3 mb-3">
-                  <div class="bg-gray-50 rounded-lg p-2.5">
-                    <span class="text-xs font-semibold text-gray-900">建议怎么验证</span>
-                    <p class="text-xs text-gray-700 mt-0.5">复现实测</p>
-                  </div>
-                  <div class="bg-gray-50 rounded-lg p-2.5">
-                    <span class="text-xs font-semibold text-gray-900">建议关注点</span>
-                    <p class="text-xs text-gray-700 mt-0.5">重点盯ZCode 3.0在长任务执行时的断连频率、验证打断和测试脚本连续运行成功率。</p>
-                  </div>
-                </div>
-                
-                <a href="http://www.bilibili.com/video/av116797860741578" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-800">
                   查看原文 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
                 
@@ -400,22 +402,22 @@
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-blue-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">这类兼容OpenAI的接入路径，能快速纳入现有Agent与RAG评测链路。也有助于判断GLM-5.2在工具调用场景的可用性。</span>
+            <span class="text-gray-700">这与Memory、RAG和Stateful Agent链路直接相关，影响记忆系统接入边界。</span>
           </li>
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-blue-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">这和当前关注的 Memory、RAG、Coding Agent 高度贴近，能影响代码库接入和索引方案选型。</span>
+            <span class="text-gray-700">它同时覆盖函数调用、长上下文检索和推理力度控制，适合进入RAG与Agent评测池。对接入GLM-5.2的工程判断有直接参考。</span>
           </li>
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-blue-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">对RAG、工作流、编排评估很有价值，尤其适合校准多跳检索链路的复杂度收益比。</span>
+            <span class="text-gray-700">这正中 Coding Agent 的 Memory/RAG 设计问题。能帮助判断代码索引是否值得进入默认链路。</span>
           </li>
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-blue-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">ZCode 3.0结合GLM 5.2展示了端到端写代码能力，但稳定性问题会直接影响真实接入价值。</span>
+            <span class="text-gray-700">对 RAG 编排和本地小模型路线都很有参考价值。可用于精简查询分解、循环检索等模块。</span>
           </li>
           
         </ul>
@@ -431,11 +433,11 @@
           </div>
           <h3 class="text-base font-bold text-gray-900">今天值得试的工具</h3>
         </div>
-        <h4 class="text-lg font-bold text-gray-900 mb-1">GLM-5.2</h4>
-        <p class="text-sm text-gray-700 mb-3">兼容OpenAI API的大模型接口</p>
+        <h4 class="text-lg font-bold text-gray-900 mb-1">GLM-5.2 API</h4>
+        <p class="text-sm text-gray-700 mb-3">支持长上下文检索与函数调用的大模型API</p>
         <div class="flex flex-wrap gap-4 text-xs mb-3">
-          <div><span class="font-semibold text-green-800">适合</span><span class="text-gray-600 ml-1">现有OpenAI应用低成本迁移联调</span></div>
-          <div><span class="font-semibold text-red-700">不适合</span><span class="text-gray-600 ml-1">只看论文不做集成者</span></div>
+          <div><span class="font-semibold text-green-800">适合</span><span class="text-gray-600 ml-1">开发Agent、RAG与工具调用原型</span></div>
+          <div><span class="font-semibold text-red-700">不适合</span><span class="text-gray-600 ml-1">不适合纯本地离线部署</span></div>
         </div>
         
         <a href="https://open.bigmodel.cn/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-green-700 hover:text-green-800">
@@ -446,6 +448,22 @@
       
 
       
+      
+      <div class="bg-red-50 border border-red-200 rounded-xl p-5 mb-6">
+        <div class="flex items-start gap-3">
+          <div class="p-1.5 bg-red-500 rounded-lg flex-shrink-0">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm font-bold text-red-900 mb-2">风险提醒</h3>
+            <div class="space-y-2 text-sm">
+              <div class="flex gap-2"><span class="text-red-600 font-semibold whitespace-nowrap">容易误读</span><span class="text-gray-700">看到多篇关于 Coding Agent、Agentic RAG、长时记忆和评测基准的论文/实测，就认为这些能力已可直接稳定用于生产开发流程。</span></div>
+              <div class="flex gap-2"><span class="text-green-700 font-semibold whitespace-nowrap">正确理解</span><span class="text-gray-700">今天的信息里有不少是评测框架、组件消融和失效分析，例如 AgentMeter、ClayBuddy、RigorBench、MacAgentBench，以及“Confident and Wrong”对静默错误的揭示，这更说明该领域仍处在“能力验证+风险暴露”阶段。对开发者而言，这些结果更多证明需要补齐验证、约束和监控，而不是证明 Agent 已经可靠替代人工判断。</span></div>
+              <div class="flex gap-2"><span class="text-gray-900 font-semibold whitespace-nowrap">建议</span><span class="text-gray-700">在引入 GLM-5.2 API、长时记忆或 Coding Agent 到真实工程前，先用你自己的代码库和任务集做离线评测，并强制加入测试、审查和回滚机制。</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
       
 
       
@@ -458,16 +476,16 @@
           <h3 class="text-base font-bold text-gray-900">今天该做什么</h3>
         </div>
         <div class="bg-white/60 rounded-lg p-4">
-          <p class="text-sm text-gray-700 font-medium">评估接入GLM-5.2</p>
+          <p class="text-sm text-gray-700 font-medium">补做记忆安全测试</p>
           
           <ul class="mt-2 space-y-1">
             
             <li class="text-xs text-gray-500 flex items-start gap-1.5">
-              <span class="text-blue-500 mt-0.5">→</span>这类兼容OpenAI的接入路径，能快速纳入现有Agent与RAG评测链路。也有助于判断GLM-5.2在工具调用场景的可用性。
+              <span class="text-blue-500 mt-0.5">→</span>这与Memory、RAG和Stateful Agent链路直接相关，影响记忆系统接入边界。
             </li>
             
             <li class="text-xs text-gray-500 flex items-start gap-1.5">
-              <span class="text-blue-500 mt-0.5">→</span>这和当前关注的 Memory、RAG、Coding Agent 高度贴近，能影响代码库接入和索引方案选型。
+              <span class="text-blue-500 mt-0.5">→</span>它同时覆盖函数调用、长上下文检索和推理力度控制，适合进入RAG与Agent评测池。对接入GLM-5.2的工程判断有直接参考。
             </li>
             
           </ul>
@@ -498,7 +516,7 @@
                   <span class="text-xs bg-white/80 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-full font-medium">社交产品</span>
                   
                 </div>
-                <h3 class="text-xl font-bold text-gray-900">zeta 3.39.1免费陪伴更新</h3>
+                <h3 class="text-xl font-bold text-gray-900">zeta 3.39.1更新值得关注</h3>
               </div>
             </div>
 
@@ -506,20 +524,20 @@
             <div class="bg-white/70 border border-amber-200 rounded-lg p-3 mb-4">
               <div class="text-xs font-semibold text-amber-900 mb-1">为什么和我们相关</div>
               
-              <p class="text-sm text-gray-700">它直接对应我们在看的社交产品格局与产品更新方向，可作为AI陪伴赛道的竞品观察样本。</p>
+              <p class="text-sm text-gray-700">它直接命中我们当前关注的社交产品格局与产品更新方向，适合纳入角色陪伴类竞品观察名单。</p>
               
               
-              <p class="text-sm text-gray-600 mt-1">它命中当前社交产品格局、产品更新和用户声音方向，会影响我们对AI陪伴产品入口设计与商业化动作的竞品判断。</p>
+              <p class="text-sm text-gray-600 mt-1">它贴近 社交产品 与 用户反馈 关注域，核心判断点是角色叙事玩法、评价口碑和免费策略是否带来可复制增长信号。</p>
               
             </div>
             
 
             <div class="space-y-2 text-sm mb-4">
               
-              <p class="text-gray-700"><span class="font-semibold text-gray-900">发生了什么</span> — zeta 3.39.1免费更新，主打角色聊天与故事互动。</p>
+              <p class="text-gray-700"><span class="font-semibold text-gray-900">发生了什么</span> — zeta 3.39.1在App Store持续更新运营。</p>
               
               
-              <p class="text-gray-700"><span class="font-semibold text-gray-900">为什么重要</span> — 免费陪伴+剧情互动，验证高留存社交方向。</p>
+              <p class="text-gray-700"><span class="font-semibold text-gray-900">为什么重要</span> — 反映AI社交故事赛道仍在高频迭代。</p>
               
             </div>
 
@@ -528,7 +546,7 @@
               
               <div class="bg-white/70 border border-slate-200 rounded-lg p-3">
                 <div class="text-xs font-semibold text-slate-900 mb-1">平台热度</div>
-                <p class="text-sm text-gray-700">App Store 显示其评分 4.67382、评价数 10991，且当前价格为免费，说明已有一定用户基础与口碑沉淀。</p>
+                <p class="text-sm text-gray-700">该应用在 App Store 评分为 4.67382，累计 10991 条评价，免费提供，说明已具备一定用户规模与口碑基础。</p>
               </div>
               
               
@@ -540,25 +558,25 @@
               <div class="flex items-center gap-2 mb-1.5">
                 <span class="text-xs font-semibold text-purple-900">对产品经理的影响</span>
               </div>
-              <p class="text-sm text-gray-700">说明AI陪伴赛道正从单聊走向角色化、剧情化运营。产品经理需关注免费获客与互动深度的平衡。</p>
+              <p class="text-sm text-gray-700">产品经理应关注AI陪伴与故事聊天融合趋势，以及持续运营带来的留存提升空间。可借鉴版本迭代节奏与功能包装方式。</p>
             </div>
             
 
             <div class="grid md:grid-cols-2 gap-3 mb-4">
               <div class="bg-white/70 border border-amber-200 rounded-lg p-3">
                 <div class="text-xs font-semibold text-amber-900 mb-1">建议怎么验证</div>
-                <p class="text-sm text-gray-700">拆解互动留存机制</p>
+                <p class="text-sm text-gray-700">拆解其留存策略</p>
               </div>
               <div class="bg-white/70 border border-amber-200 rounded-lg p-3">
                 <div class="text-xs font-semibold text-amber-900 mb-1">建议关注点</div>
-                <p class="text-sm text-gray-700">重点盯免费模式下的留存与付费转化设计，以及角色互动是否靠内容更新持续驱动活跃。</p>
+                <p class="text-sm text-gray-700">重点盯免费模式下的订阅转化入口、角色供给效率，以及高评分是否来自内容沉浸感而非短期新鲜感。</p>
               </div>
             </div>
 
             
             <div class="flex items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2.5">
               <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              <span class="text-sm font-medium">建议动作：拆解互动留存机制</span>
+              <span class="text-sm font-medium">建议动作：拆解其留存策略</span>
             </div>
             
 
@@ -594,28 +612,28 @@
                   
                   
                 </div>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Cuddmi 1.8.0 AI陪伴聊天产品上新观察</h3>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">Cuddmi 1.8.0 AI陪伴聊天应用更新</h3>
                 
                 <div class="bg-amber-50 border border-amber-100 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-amber-900">为什么和我们相关</span>
                   
-                  <p class="text-xs text-gray-700 mt-0.5">它命中我们正在看的全球社交向 AI 产品上新，可补充 AI 陪伴聊天赛道的早期样本池。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">它命中我们正在看的AI社交产品上新方向，可用于补充陪伴聊天赛道的新品观察样本。</p>
                   
                   
-                  <p class="text-xs text-gray-600 mt-0.5">它贴合社交产品格局与产品上新观察，适合用于判断新陪伴产品的入口设计和早期用户声音是否值得持续跟踪。</p>
+                  <p class="text-xs text-gray-600 mt-0.5">它贴近社交产品格局与用户声音监测，适合观察新品冷启动、评价反馈和后续商业动作是否跟上。</p>
                   
                 </div>
                 
-                <p class="text-xs text-gray-600 mb-2">Cuddmi 1.8.0以免费 AI 陪伴聊天形态上线。</p>
+                <p class="text-xs text-gray-600 mb-2">Cuddmi 1.8.0在App Store更新。</p>
                 
-                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>可跟踪陪伴类社交AI新 entrants 的冷启动信号。</p>
+                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>反映AI陪伴聊天新品仍在持续试水。</p>
                 
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   
                   <div class="bg-slate-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-slate-900">平台热度</span>
-                    <p class="text-xs text-gray-700 mt-0.5">该应用当前评分 3.66667、仅 3 条评价，仍处于非常早期的用户验证阶段，真实口碑尚未稳定。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">App Store 当前仅有 3 条评价、评分 3.66667，说明产品还处在非常早期的冷启动阶段。</p>
                   </div>
                   
                   
@@ -624,17 +642,17 @@
                 
                 <div class="bg-purple-50 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-purple-900">对产品经理的影响</span>
-                  <p class="text-xs text-gray-700 mt-0.5">这是 AI Companion Chat 赛道的新样本，适合观察早期产品定位与冷启动表现。低评价量也提示当前声量仍弱。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">这是AI Companion Chat赛道的早期产品样本，适合观察冷启动定位与功能包装。评价量极低，能帮助判断该方向真实需求强弱。</p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议怎么验证</span>
-                    <p class="text-xs text-gray-700 mt-0.5">记录新盘子</p>
+                    <p class="text-xs text-gray-700 mt-0.5">跟踪冷启动</p>
                   </div>
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议关注点</span>
-                    <p class="text-xs text-gray-700 mt-0.5">如果继续跟进，要重点盯评价数增长、差评集中点，以及免费入口是否能顺利过渡到订阅或积分收费。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">真正跟进时要重点盯住低评分低评价量背后，是获客不足、留存偏弱还是体验未达预期。</p>
                   </div>
                 </div>
                 
@@ -655,28 +673,28 @@
                   
                   
                 </div>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Ruby Chat: AI Girlfriend 2.5.20更新</h3>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">Ai Girl 3.3虚拟陪伴社交应用更新观察</h3>
                 
                 <div class="bg-amber-50 border border-amber-100 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-amber-900">为什么和我们相关</span>
                   
-                  <p class="text-xs text-gray-700 mt-0.5">它对应我们正在看的AI陪伴社交赛道，能补充观察细分伴侣型产品的上新频率与市场验证强弱。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">它直接落在我们当前追踪的AI陪伴社交产品格局，可用于判断同类产品的上线节奏与用户验证强弱。</p>
                   
                   
-                  <p class="text-xs text-gray-600 mt-0.5">它命中社交产品格局与用户声音方向，具体判断点是早期口碑能否支撑继续增长，以及是否形成可复制的陪伴定位。</p>
+                  <p class="text-xs text-gray-600 mt-0.5">它命中社交产品格局和产品更新观察，适合纳入竞品库评估用户口碑、品类成熟度与后续商业动作。</p>
                   
                 </div>
                 
-                <p class="text-xs text-gray-600 mb-2">Ruby Chat: AI Girlfriend上线2.5.20版，继续主打AI伴侣陪伴。</p>
+                <p class="text-xs text-gray-600 mb-2">Ai Girl 3.3在App Store更新上线。</p>
                 
-                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>显示陪伴型AI社交产品仍在持续迭代试水。</p>
+                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>反映AI陪伴社交赛道仍在持续迭代。</p>
                 
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   
                   <div class="bg-slate-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-slate-900">平台热度</span>
-                    <p class="text-xs text-gray-700 mt-0.5">该应用在Entertainment与Social Networking分类免费提供，评分4.82828，但仅198条评价，仍属较早期体量。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">该应用当前评分为4.30769，累计3835条评价，且免费提供，说明已有一定用户基础。</p>
                   </div>
                   
                   
@@ -685,21 +703,21 @@
                 
                 <div class="bg-purple-50 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-purple-900">对产品经理的影响</span>
-                  <p class="text-xs text-gray-700 mt-0.5">这是AI伴侣赛道的又一在更产品，可作为细分陪伴需求的竞品样本。评价数偏低，说明更像早期验证而非成熟头部。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">这是典型AI陪伴社交产品更新信号，可纳入海外竞品池持续跟踪。评分和评价数也能辅助判断真实用户接受度。</p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议怎么验证</span>
-                    <p class="text-xs text-gray-700 mt-0.5">轻量跟踪</p>
+                    <p class="text-xs text-gray-700 mt-0.5">纳入竞品跟踪</p>
                   </div>
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议关注点</span>
-                    <p class="text-xs text-gray-700 mt-0.5">真正评估时要重点盯低评价基数下的真实留存和口碑稳定性，以及“lifelike interactions”是否只是文案包装。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">真正跟进时要重点盯留存是否来自陪伴关系沉淀，还是仅靠新鲜感和免费获取驱动。</p>
                   </div>
                 </div>
                 
-                <a href="https://apps.apple.com/us/app/ruby-chat-ai-girlfriend/id6670498864?uo=4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-800">
+                <a href="https://apps.apple.com/us/app/ai-girl-chat-with-girlfriend/id6503456381?uo=4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-800">
                   查看原文 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
                 
@@ -712,32 +730,32 @@
                   <span class="text-xs font-semibold text-purple-600 bg-purple-50 px-2 py-0.5 rounded-full">产品动态</span>
                   <span class="text-xs text-gray-400">App Store</span>
                   
-                  <span class="text-xs text-purple-700 bg-white border border-purple-200 px-2 py-0.5 rounded-full">社交产品</span>
+                  <span class="text-xs text-purple-700 bg-white border border-purple-200 px-2 py-0.5 rounded-full">情感陪伴</span>
                   
                   
                 </div>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">AI Boyfriend Chat: iBoy 2.61.7陪伴产品更新</h3>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">AI Boyfriend Chat: iBoy 2.61.7版更新</h3>
                 
                 <div class="bg-amber-50 border border-amber-100 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-amber-900">为什么和我们相关</span>
                   
-                  <p class="text-xs text-gray-700 mt-0.5">它命中社交产品格局与情感陪伴方向，可帮助我们判断细分陪伴场景是否出现新入口。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">它帮助我们观察情感陪伴型AI社交在健康叙事下的产品包装与用户接受度。</p>
                   
                   
-                  <p class="text-xs text-gray-600 mt-0.5">它贴近社交产品与用户声音观察，重点是情绪支持定位能否形成差异化增长与付费空间。</p>
+                  <p class="text-xs text-gray-600 mt-0.5">它命中社交产品与用户声音方向，可观察陪伴、自我探索卖点是否形成稳定评价反馈。</p>
                   
                 </div>
                 
-                <p class="text-xs text-gray-600 mb-2">AI Boyfriend Chat: iBoy 2.61.7于2026-06-17更新。</p>
+                <p class="text-xs text-gray-600 mb-2">AI Boyfriend Chat: iBoy更新至2.61.7。</p>
                 
-                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>显示情感陪伴AI仍在细分场景扩张。</p>
+                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>提供AI陪伴细分赛道版本样本。</p>
                 
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   
                   <div class="bg-slate-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-slate-900">平台热度</span>
-                    <p class="text-xs text-gray-700 mt-0.5">App Store评分4.50347，累计4880条评价，免费提供，仍处于中早期验证量级。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">App Store有4880条评价、评分4.50347，定位娱乐与健康健身，陪伴属性更强。</p>
                   </div>
                   
                   
@@ -746,17 +764,17 @@
                 
                 <div class="bg-purple-50 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-purple-900">对产品经理的影响</span>
-                  <p class="text-xs text-gray-700 mt-0.5">适合观察AI伴侣从娱乐向情绪支持延展。可补充细分人群与定位判断。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">AI陪伴叠加自我探索定位，可观察细分人群需求。适合纳入情感陪伴竞品。</p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议怎么验证</span>
-                    <p class="text-xs text-gray-700 mt-0.5">跟踪定位</p>
+                    <p class="text-xs text-gray-700 mt-0.5">跟踪评论</p>
                   </div>
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议关注点</span>
-                    <p class="text-xs text-gray-700 mt-0.5">真正评估时要盯Health & Fitness标签是否带来新增用户，及情绪支持叙事是否触发合规压力。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">重点盯健康陪伴定位能否带来更高留存，以及审核与安全边界是否更严。</p>
                   </div>
                 </div>
                 
@@ -789,22 +807,22 @@
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-purple-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">这是 AI Companion Chat 赛道的新样本，适合观察早期产品定位与冷启动表现。低评价量也提示当前声量仍弱。</span>
+            <span class="text-gray-700">这是AI Companion Chat赛道的早期产品样本，适合观察冷启动定位与功能包装。评价量极低，能帮助判断该方向真实需求强弱。</span>
           </li>
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-purple-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">这是AI伴侣赛道的又一在更产品，可作为细分陪伴需求的竞品样本。评价数偏低，说明更像早期验证而非成熟头部。</span>
+            <span class="text-gray-700">这是典型AI陪伴社交产品更新信号，可纳入海外竞品池持续跟踪。评分和评价数也能辅助判断真实用户接受度。</span>
           </li>
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-purple-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">适合观察AI伴侣从娱乐向情绪支持延展。可补充细分人群与定位判断。</span>
+            <span class="text-gray-700">AI陪伴叠加自我探索定位，可观察细分人群需求。适合纳入情感陪伴竞品。</span>
           </li>
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-purple-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">这是典型AI陪伴社交产品更新信号，适合纳入海外社交产品竞品池持续跟踪。评分与评价量也能辅助判断用户接受度。</span>
+            <span class="text-gray-700">这是典型AI陪伴型社交产品更新信号，适合纳入角色社交竞品池。可用于观察免费入口与情感陪伴定位是否有效。</span>
           </li>
           
         </ul>
@@ -820,14 +838,14 @@
           </div>
           <h3 class="text-base font-bold text-gray-900">今天值得试的工具</h3>
         </div>
-        <h4 class="text-lg font-bold text-gray-900 mb-1">PolyBuzz 2.2.32</h4>
-        <p class="text-sm text-gray-700 mb-3">角色聊天与社交互动产品样本</p>
+        <h4 class="text-lg font-bold text-gray-900 mb-1">CHAI: Social AI Platform- Chat 2.178</h4>
+        <p class="text-sm text-gray-700 mb-3">AI角色社区产品形态参考样本</p>
         <div class="flex flex-wrap gap-4 text-xs mb-3">
-          <div><span class="font-semibold text-green-800">适合</span><span class="text-gray-600 ml-1">研究AI陪伴产品机制与留存设计</span></div>
-          <div><span class="font-semibold text-red-700">不适合</span><span class="text-gray-600 ml-1">不适合效率工具需求</span></div>
+          <div><span class="font-semibold text-green-800">适合</span><span class="text-gray-600 ml-1">研究AI社交留存与UGC玩法</span></div>
+          <div><span class="font-semibold text-red-700">不适合</span><span class="text-gray-600 ml-1">企业协作或效率场景</span></div>
         </div>
         
-        <a href="https://www.polybuzz.ai/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-green-700 hover:text-green-800">
+        <a href="https://www.chai-research.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-green-700 hover:text-green-800">
           立即体验 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
         </a>
         
@@ -844,9 +862,9 @@
           <div class="flex-1">
             <h3 class="text-sm font-bold text-red-900 mb-2">风险提醒</h3>
             <div class="space-y-2 text-sm">
-              <div class="flex gap-2"><span class="text-red-600 font-semibold whitespace-nowrap">容易误读</span><span class="text-gray-700">看到 Cuddmi 1.8.0、Ruby Chat: AI Girlfriend 2.5.20、zeta 3.39.1、Blush 7.1.0、PolyBuzz 2.2.32 等一批产品集中更新，容易误读为“AI陪伴/角色聊天赛道正在显著加速增长，适合立即跟进立项”。</span></div>
-              <div class="flex gap-2"><span class="text-green-700 font-semibold whitespace-nowrap">正确理解</span><span class="text-gray-700">这组信息主要反映 App Store 上大量同类产品在持续做常规版本迭代与运营维持，不等于新增需求被验证或商业化效率提升。尤其像 Cuddmi 1.8.0 的“免费上线”、Charm 0.1.2606170 的“新上架”和多款老产品的常规更新，更多说明竞争拥挤、同质化加深，而不是单一方向的机会确认。</span></div>
-              <div class="flex gap-2"><span class="text-gray-900 font-semibold whitespace-nowrap">建议</span><span class="text-gray-700">建议先补充下载量、畅销榜、留存、付费转化和用户评价变化，再判断是否进入该方向，而不要仅凭 Cuddmi 1.8.0、Charm 0.1.2606170 等上新或更新信号做产品决策。</span></div>
+              <div class="flex gap-2"><span class="text-red-600 font-semibold whitespace-nowrap">容易误读</span><span class="text-gray-700">看到 Cuddmi 1.8.0、Ai Girl 3.3、CHAI: Social AI Platform- Chat 2.178 等一批陪伴类产品集中更新，容易误读为“AI陪伴赛道需求已被验证，只要快速跟进就能拿到增长”。</span></div>
+              <div class="flex gap-2"><span class="text-green-700 font-semibold whitespace-nowrap">正确理解</span><span class="text-gray-700">这些信息只能说明 App Store 上该品类竞争非常密集、迭代频繁，不能直接证明新增需求、付费意愿或长期留存成立。对产品经理来说，更大的现实风险是同质化严重且伴随内容安全、情感依赖与平台审核约束，贸然跟进可能先卷入获客和合规成本。</span></div>
+              <div class="flex gap-2"><span class="text-gray-900 font-semibold whitespace-nowrap">建议</span><span class="text-gray-700">建议先验证细分人群留存和付费，再单独评估未成年人保护、情感陪伴边界和审核策略，不要仅凭更新密度立项。</span></div>
             </div>
           </div>
         </div>
@@ -863,16 +881,16 @@
           <h3 class="text-base font-bold text-gray-900">今天该做什么</h3>
         </div>
         <div class="bg-white/60 rounded-lg p-4">
-          <p class="text-sm text-gray-700 font-medium">拆解互动留存机制</p>
+          <p class="text-sm text-gray-700 font-medium">拆解其留存策略</p>
           
           <ul class="mt-2 space-y-1">
             
             <li class="text-xs text-gray-500 flex items-start gap-1.5">
-              <span class="text-purple-500 mt-0.5">→</span>这是 AI Companion Chat 赛道的新样本，适合观察早期产品定位与冷启动表现。低评价量也提示当前声量仍弱。
+              <span class="text-purple-500 mt-0.5">→</span>这是AI Companion Chat赛道的早期产品样本，适合观察冷启动定位与功能包装。评价量极低，能帮助判断该方向真实需求强弱。
             </li>
             
             <li class="text-xs text-gray-500 flex items-start gap-1.5">
-              <span class="text-purple-500 mt-0.5">→</span>这是AI伴侣赛道的又一在更产品，可作为细分陪伴需求的竞品样本。评价数偏低，说明更像早期验证而非成熟头部。
+              <span class="text-purple-500 mt-0.5">→</span>这是典型AI陪伴社交产品更新信号，可纳入海外竞品池持续跟踪。评分和评价数也能辅助判断真实用户接受度。
             </li>
             
           </ul>
@@ -903,7 +921,7 @@
                   <span class="text-xs bg-white/80 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-full font-medium">2D工具</span>
                   
                 </div>
-                <h3 class="text-xl font-bold text-gray-900">Boogu-Image-0.1实测</h3>
+                <h3 class="text-xl font-bold text-gray-900">Boogu turbo出油实测</h3>
               </div>
             </div>
 
@@ -911,20 +929,20 @@
             <div class="bg-white/70 border border-amber-200 rounded-lg p-3 mb-4">
               <div class="text-xs font-semibold text-amber-900 mb-1">为什么和我们相关</div>
               
-              <p class="text-sm text-gray-700">它同时命中我们在看的工作流与生产工作流方向，可用于判断是否把开源图像模型纳入现有生成链路与评测池。</p>
+              <p class="text-sm text-gray-700">它命中当前 2D 工具与生产工作流方向，会影响我们是否把 Boogu turbo 纳入人物出图流程对比。</p>
               
               
-              <p class="text-sm text-gray-600 mt-1">它直指当前关注的 2D 工具与生产工作流，可帮助判断文生图和图像编辑是否值得替换现有出图方案。</p>
+              <p class="text-sm text-gray-600 mt-1">它直接对应当前 2D 工具和生产工作流，会影响人物类工作流是否值得替换与参数模板怎么定。</p>
               
             </div>
             
 
             <div class="space-y-2 text-sm mb-4">
               
-              <p class="text-gray-700"><span class="font-semibold text-gray-900">发生了什么</span> — Boogu-Image-0.1 10B开源图像模型公布实测表现。</p>
+              <p class="text-gray-700"><span class="font-semibold text-gray-900">发生了什么</span> — 实测定位Boogu turbo人物出油成因。</p>
               
               
-              <p class="text-gray-700"><span class="font-semibold text-gray-900">为什么重要</span> — 开源模型可直接影响美术生成与编辑工作流。</p>
+              <p class="text-gray-700"><span class="font-semibold text-gray-900">为什么重要</span> — 直接影响人物质感控制与出图稳定性。</p>
               
             </div>
 
@@ -933,7 +951,7 @@
               
               <div class="bg-white/70 border border-slate-200 rounded-lg p-3">
                 <div class="text-xs font-semibold text-slate-900 mb-1">平台热度</div>
-                <p class="text-sm text-gray-700">视频时长 17 分 09 秒，当前播放 150、收藏 2，仍属于早期小范围传播的教程型内容。</p>
+                <p class="text-sm text-gray-700">该视频时长 12 分 10 秒，当前播放 42、收藏 1，仍处于很早期的小样本验证热度。</p>
               </div>
               
               
@@ -945,32 +963,32 @@
               <div class="flex items-center gap-2 mb-1.5">
                 <span class="text-xs font-semibold text-pink-900">对美术的影响</span>
               </div>
-              <p class="text-sm text-gray-700">这意味着美术团队可低门槛评估新开源图像能力，用于文生图和局部编辑备选。若效果稳定，能补充商用闭源模型之外的生产方案。</p>
+              <p class="text-sm text-gray-700">这类一线实测比纯论文更快转化为美术生产经验。做角色图时，可据此调整分辨率与提示词，减少油腻脸和材质失真。</p>
             </div>
             
 
             <div class="grid md:grid-cols-2 gap-3 mb-4">
               <div class="bg-white/70 border border-amber-200 rounded-lg p-3">
                 <div class="text-xs font-semibold text-amber-900 mb-1">建议怎么验证</div>
-                <p class="text-sm text-gray-700">尽快做风格测评</p>
+                <p class="text-sm text-gray-700">复测你的角色流</p>
               </div>
               <div class="bg-white/70 border border-amber-200 rounded-lg p-3">
                 <div class="text-xs font-semibold text-amber-900 mb-1">建议关注点</div>
-                <p class="text-sm text-gray-700">真正上手时要重点盯提示词服从度、局部重绘稳定性，以及连续出图时风格和细节是否容易漂移。</p>
+                <p class="text-sm text-gray-700">真正采用时要重点盯不同分辨率下皮肤高光与材质一致性，避免人物持续出现油亮塑料感。</p>
               </div>
             </div>
 
             
             <div class="flex items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2.5">
               <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              <span class="text-sm font-medium">建议动作：尽快做风格测评</span>
+              <span class="text-sm font-medium">建议动作：复测你的角色流</span>
             </div>
             
 
             
             <div class="flex flex-wrap items-center gap-4 mt-3">
               
-              <a href="http://www.bilibili.com/video/av116797659551458" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700 hover:text-amber-900">
+              <a href="http://www.bilibili.com/video/av116798229842815" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700 hover:text-amber-900">
                 查看原文 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               </a>
               
@@ -995,32 +1013,32 @@
                   <span class="text-xs font-semibold text-pink-600 bg-pink-50 px-2 py-0.5 rounded-full">视觉生成</span>
                   <span class="text-xs text-gray-400">arXiv cs.AI</span>
                   
-                  <span class="text-xs text-pink-700 bg-white border border-pink-200 px-2 py-0.5 rounded-full">创作技巧</span>
+                  <span class="text-xs text-pink-700 bg-white border border-pink-200 px-2 py-0.5 rounded-full">2D工具</span>
                   
                   
                 </div>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">多主体生成论文聚焦身份外观分层引导</h3>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">Hierarchical Concept-to-Appearance多主体生图方法</h3>
                 
                 <div class="bg-amber-50 border border-amber-100 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-amber-900">为什么和我们相关</span>
                   
-                  <p class="text-xs text-gray-700 mt-0.5">它对应我们在看的创作技巧方向，可能影响多角色视觉生成方案的评测维度与工具选型。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">它与我们关注的2D工具和创作技巧有关，能帮助判断多角色视觉工作流是否有替换机会。</p>
                   
                   
-                  <p class="text-xs text-gray-600 mt-0.5">它命中当前 2D 工具与美术工作流关注点，值得纳入多人角色生成的质量评测与方法储备。</p>
+                  <p class="text-xs text-gray-600 mt-0.5">它命中当前2D工具与创作技巧方向，适合评估多角色生成是否值得进入正式出图工作流。</p>
                   
                 </div>
                 
-                <p class="text-xs text-gray-600 mb-2">论文提出多主体图像生成分层引导方法。</p>
+                <p class="text-xs text-gray-600 mb-2">论文提出多主体图像生成的新一致性引导方法。</p>
                 
-                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>可改善多角色生成的一致性与可控性。</p>
+                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>可改善多角色身份一致性与文本跟随能力。</p>
                 
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   
                   <div class="bg-slate-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-slate-900">来源补充</span>
-                    <p class="text-xs text-gray-700 mt-0.5">该研究来自 arXiv cs.AI，当前为 2602.03448v2 替换稿，仍属早期论文信号。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">该论文来自 arXiv:2602.03448v2，为更新版本，说明作者仍在持续修正方案细节。</p>
                   </div>
                   
                   
@@ -1029,17 +1047,17 @@
                 
                 <div class="bg-pink-50 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-pink-900">对美术的影响</span>
-                  <p class="text-xs text-gray-700 mt-0.5">这类方法直指多人设定下的人物一致性问题。对角色海报、分镜和组合图工作流有参考价值。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">它直指多主体出图的一致性痛点，可能影响角色海报与分镜工作流选型。</p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议怎么验证</span>
-                    <p class="text-xs text-gray-700 mt-0.5">加入方法跟踪</p>
+                    <p class="text-xs text-gray-700 mt-0.5">跟进案例</p>
                   </div>
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议关注点</span>
-                    <p class="text-xs text-gray-700 mt-0.5">真正上手时要重点盯多主体间身份串扰、局部细节漂移，以及文本指令一复杂就失稳的边界。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">重点盯多主体身份在不同姿态、遮挡和风格切换下是否仍稳定，不要只看单张样例。</p>
                   </div>
                 </div>
                 
@@ -1056,32 +1074,32 @@
                   <span class="text-xs font-semibold text-pink-600 bg-pink-50 px-2 py-0.5 rounded-full">视觉生成</span>
                   <span class="text-xs text-gray-400">arXiv cs.AI</span>
                   
-                  <span class="text-xs text-pink-700 bg-white border border-pink-200 px-2 py-0.5 rounded-full">创作技巧</span>
+                  <span class="text-xs text-pink-700 bg-white border border-pink-200 px-2 py-0.5 rounded-full">2D工具</span>
                   
                   
                 </div>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Detail++训练免细节增强方案</h3>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">Detail++免训练T2I细节增强方法</h3>
                 
                 <div class="bg-amber-50 border border-amber-100 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-amber-900">为什么和我们相关</span>
                   
-                  <p class="text-xs text-gray-700 mt-0.5">它对应我们当前关注的创作技巧方向，可用于判断是否值得把训练免细节增强纳入T2I工作流对比。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">它关系到我们是否把细节增强步骤加入当前2D生成工作流，以提升复杂场景出图质量。</p>
                   
                   
-                  <p class="text-xs text-gray-600 mt-0.5">它命中当前在看的2D工具与创作技巧方向，核心判断点是能否改善复杂提示下的细节稳定性与出图选型顺序。</p>
+                  <p class="text-xs text-gray-600 mt-0.5">它命中当前2D工具与创作技巧方向，关键判断是能否作为稳定的细节增强环节进入出图流程。</p>
                   
                 </div>
                 
-                <p class="text-xs text-gray-600 mb-2">论文提出Detail++提升T2I细节表现。</p>
+                <p class="text-xs text-gray-600 mb-2">Detail++提出免训练T2I细节增强方法。</p>
                 
-                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>可改善复杂提示下多主体细节一致性。</p>
+                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>可提升复杂提示下多主体细节表现。</p>
                 
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   
                   <div class="bg-slate-50 rounded-lg p-2.5">
-                    <span class="text-xs font-semibold text-slate-900">来源补充</span>
-                    <p class="text-xs text-gray-700 mt-0.5">仅见 arXiv:2507.17853v3 论文更新，当前没有产品接入、开源热度或商业化信号。</p>
+                    <span class="text-xs font-semibold text-slate-900">论文状态</span>
+                    <p class="text-xs text-gray-700 mt-0.5">arXiv:2507.17853v3为更新版本，聚焦复杂提示词与多主体属性绑定的细节增强问题。</p>
                   </div>
                   
                   
@@ -1090,17 +1108,17 @@
                 
                 <div class="bg-pink-50 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-pink-900">对美术的影响</span>
-                  <p class="text-xs text-gray-700 mt-0.5">这是直接作用于T2I出图质量的训练免方案。适合纳入复杂提示词和多主体场景的工作流观察。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">对多主体画面和属性一致性有直接参考价值，可能优化现有T2I出图工作流。</p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议怎么验证</span>
-                    <p class="text-xs text-gray-700 mt-0.5">加入出图对比</p>
+                    <p class="text-xs text-gray-700 mt-0.5">测试复杂提示</p>
                   </div>
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议关注点</span>
-                    <p class="text-xs text-gray-700 mt-0.5">真正上手后要重点盯多主体属性绑定是否稳定，以及放大细节时是否引入伪纹理和局部过锐化。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">重点盯免训练方案在不同T2I Diffusion Models上的稳定性，以及是否会牺牲构图与风格一致性。</p>
                   </div>
                 </div>
                 
@@ -1121,28 +1139,28 @@
                   
                   
                 </div>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Semantic Browsing论文提升文生图可控多样性</h3>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">Semantic Browsing提升图像生成可控多样性</h3>
                 
                 <div class="bg-amber-50 border border-amber-100 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-amber-900">为什么和我们相关</span>
                   
-                  <p class="text-xs text-gray-700 mt-0.5">它和我们关注的2D工具方向直接相关，关键是是否能作为概念草图与风格探索阶段的工作流替换点。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">它对应我们在看的 2D 工具方向，可直接影响文生图工具的评测维度与选型顺序。</p>
                   
                   
-                  <p class="text-xs text-gray-600 mt-0.5">它直接命中2D工具与创作技巧方向，判断点是能否在不丢控制力的情况下提升早期视觉探索产能。</p>
+                  <p class="text-xs text-gray-600 mt-0.5">它命中当前 2D 工具与创作技巧方向，值得纳入文生图工作流的质量评测池，重点比较多样性与可控性的平衡。</p>
                   
                 </div>
                 
-                <p class="text-xs text-gray-600 mb-2">Semantic Browsing研究提升文生图多样性且保持可控性。</p>
+                <p class="text-xs text-gray-600 mb-2">Semantic Browsing提出可控提升出图多样性。</p>
                 
-                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>能缓解单一视觉解读，提升2D创作探索效率。</p>
+                <p class="text-xs text-gray-500 mb-3"><span class="font-semibold text-gray-700">为什么重要：</span>可改善文生图同质化，影响工具选型。</p>
                 
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   
                   <div class="bg-slate-50 rounded-lg p-2.5">
-                    <span class="text-xs font-semibold text-slate-900">任务类型</span>
-                    <p class="text-xs text-gray-700 mt-0.5">论文针对文生图常见的高一致但低多样性问题，重点解决同一提示词下容易收敛为单一视觉答案的现象。</p>
+                    <span class="text-xs font-semibold text-slate-900">论文版本</span>
+                    <p class="text-xs text-gray-700 mt-0.5">该研究为 arXiv cs.AI 的 v1 早期论文，当前更适合方法跟踪，尚缺产品侧验证。</p>
                   </div>
                   
                   
@@ -1151,17 +1169,17 @@
                 
                 <div class="bg-pink-50 rounded-lg p-2.5 mb-3">
                   <span class="text-xs font-semibold text-pink-900">对美术的影响</span>
-                  <p class="text-xs text-gray-700 mt-0.5">这对概念探索和风格发散很实用。若控制稳定，能减少反复改prompt的人力消耗。</p>
+                  <p class="text-xs text-gray-700 mt-0.5">它直指文生图常见的构图收敛问题。对比不同模型时，可把多样性控制纳入质量标准。</p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-3 mb-3">
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议怎么验证</span>
-                    <p class="text-xs text-gray-700 mt-0.5">评估工作流</p>
+                    <p class="text-xs text-gray-700 mt-0.5">加入评测单</p>
                   </div>
                   <div class="bg-gray-50 rounded-lg p-2.5">
                     <span class="text-xs font-semibold text-gray-900">建议关注点</span>
-                    <p class="text-xs text-gray-700 mt-0.5">重点盯多样性提升后是否仍保留主体、构图和风格约束，否则会增加筛图与返工成本。</p>
+                    <p class="text-xs text-gray-700 mt-0.5">真正上手时要重点盯多样性提升是否牺牲提示词一致性，以及不同题材下风格稳定度是否波动。</p>
                   </div>
                 </div>
                 
@@ -1194,22 +1212,22 @@
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-pink-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">这是可直接影响 2D 生产工作流的开源模型样本，值得验证文生图和图像编辑是否能替代部分现有工具链。若质量稳定，能带来更低成本试错空间。</span>
+            <span class="text-gray-700">它聚焦人物质感失真这一常见问题，适合美术快速校准 Boogu turbo 出图参数。</span>
           </li>
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-pink-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">这类方法直指多人设定下的人物一致性问题。对角色海报、分镜和组合图工作流有参考价值。</span>
+            <span class="text-gray-700">它直指多主体出图的一致性痛点，可能影响角色海报与分镜工作流选型。</span>
           </li>
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-pink-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">这是直接作用于T2I出图质量的训练免方案。适合纳入复杂提示词和多主体场景的工作流观察。</span>
+            <span class="text-gray-700">对多主体画面和属性一致性有直接参考价值，可能优化现有T2I出图工作流。</span>
           </li>
           
           <li class="flex items-start gap-2 text-sm">
             <span class="text-pink-600 font-bold mt-0.5 flex-shrink-0">•</span>
-            <span class="text-gray-700">这对概念探索和风格发散很实用。若控制稳定，能减少反复改prompt的人力消耗。</span>
+            <span class="text-gray-700">它直指文生图常见的构图收敛问题。对比不同模型时，可把多样性控制纳入质量标准。</span>
           </li>
           
         </ul>
@@ -1217,26 +1235,6 @@
       
 
       
-      
-      <div class="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-5 mb-6">
-        <div class="flex items-center gap-2 mb-3">
-          <div class="p-1.5 bg-green-600 rounded-lg">
-            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-          </div>
-          <h3 class="text-base font-bold text-gray-900">今天值得试的工具</h3>
-        </div>
-        <h4 class="text-lg font-bold text-gray-900 mb-1">Boogu-Image-0.1 10B</h4>
-        <p class="text-sm text-gray-700 mb-3">开源文生图与图像编辑模型</p>
-        <div class="flex flex-wrap gap-4 text-xs mb-3">
-          <div><span class="font-semibold text-green-800">适合</span><span class="text-gray-600 ml-1">概念图探索与快速风格草图</span></div>
-          <div><span class="font-semibold text-red-700">不适合</span><span class="text-gray-600 ml-1">非视觉类AI陪伴需求</span></div>
-        </div>
-        
-        <a href="https://www.bilibili.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-green-700 hover:text-green-800">
-          立即体验 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-        </a>
-        
-      </div>
       
 
       
@@ -1249,9 +1247,9 @@
           <div class="flex-1">
             <h3 class="text-sm font-bold text-red-900 mb-2">风险提醒</h3>
             <div class="space-y-2 text-sm">
-              <div class="flex gap-2"><span class="text-red-600 font-semibold whitespace-nowrap">容易误读</span><span class="text-gray-700">容易把如 Detail++、Semantic Browsing 这类 arXiv cs.AI 论文结果误读为“已经可直接用于现有出图流程的稳定提质/控图能力”，从而高估今天对美术生产的即时价值。</span></div>
-              <div class="flex gap-2"><span class="text-green-700 font-semibold whitespace-nowrap">正确理解</span><span class="text-gray-700">这些内容大多还是研究方案或评测方法，说明技术方向有进展，但不等于已经集成到你正在用的模型、插件或商业工作流里。对美术来说，短期更应把它们视为风格控制、细节增强、多主体一致性方面的趋势信号，而不是可立即承诺交付效果的现成能力。</span></div>
-              <div class="flex gap-2"><span class="text-gray-900 font-semibold whitespace-nowrap">建议</span><span class="text-gray-700">建议先将相关论文标记为“研究观察”而非“工具升级”，只有在确认已落地到具体产品或可复现工作流后再纳入美术产能判断。</span></div>
+              <div class="flex gap-2"><span class="text-red-600 font-semibold whitespace-nowrap">容易误读</span><span class="text-gray-700">容易把“Boogu turbo人物出油问题与分辨率提示词实测”误读成只要改分辨率或补几个提示词，就能稳定解决 Boogu turbo 的人物油腻质感问题。</span></div>
+              <div class="flex gap-2"><span class="text-green-700 font-semibold whitespace-nowrap">正确理解</span><span class="text-gray-700">这类“出油”更可能是模型风格倾向、训练分布和提示词共同作用的结果，分辨率与提示词只能缓解，不能保证在所有人物题材里彻底消除。美术在参考实测结论时，应把它当作局部经验而不是通用修复公式。</span></div>
+              <div class="flex gap-2"><span class="text-gray-900 font-semibold whitespace-nowrap">建议</span><span class="text-gray-700">建议先用固定角色和固定光照做一轮 Boogu turbo 分辨率/提示词对照测试，再决定是否进入正式出图流程。</span></div>
             </div>
           </div>
         </div>
@@ -1268,16 +1266,16 @@
           <h3 class="text-base font-bold text-gray-900">今天该做什么</h3>
         </div>
         <div class="bg-white/60 rounded-lg p-4">
-          <p class="text-sm text-gray-700 font-medium">尽快做风格测评</p>
+          <p class="text-sm text-gray-700 font-medium">复测你的角色流</p>
           
           <ul class="mt-2 space-y-1">
             
             <li class="text-xs text-gray-500 flex items-start gap-1.5">
-              <span class="text-pink-500 mt-0.5">→</span>这是可直接影响 2D 生产工作流的开源模型样本，值得验证文生图和图像编辑是否能替代部分现有工具链。若质量稳定，能带来更低成本试错空间。
+              <span class="text-pink-500 mt-0.5">→</span>它聚焦人物质感失真这一常见问题，适合美术快速校准 Boogu turbo 出图参数。
             </li>
             
             <li class="text-xs text-gray-500 flex items-start gap-1.5">
-              <span class="text-pink-500 mt-0.5">→</span>这类方法直指多人设定下的人物一致性问题。对角色海报、分镜和组合图工作流有参考价值。
+              <span class="text-pink-500 mt-0.5">→</span>它直指多主体出图的一致性痛点，可能影响角色海报与分镜工作流选型。
             </li>
             
           </ul>
@@ -1291,7 +1289,7 @@
 
     <div class="mt-8 pt-6 border-t border-gray-200">
       <div class="text-center text-xs text-gray-500 space-y-1">
-        <p>AI 日报 · 2026-06-23 15:25 自动生成</p>
+        <p>AI 日报 · 2026-06-23 17:46 自动生成</p>
         <p>开发者 · 产品经理 · 美术 — 三种角色，三份精准日报</p>
       </div>
     </div>
